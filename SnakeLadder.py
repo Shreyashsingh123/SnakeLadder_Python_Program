@@ -10,7 +10,8 @@ def randomoption(dice):
     global position
     opt=random.randint(1,3)#option
     if (opt==2):
-        position+=dice
+        if(position+dice<=100):
+            position+=dice
     elif (opt==1):
         # print("No move")
         pass
